@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Brgy Balubad, Lumban Laguna</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <!-- Navbar -->
+  <nav class="navbar">
+    <!-- Logo on the Left Side -->
+    <a href="#" class="logo"><img src="logo-removebg-preview.png" alt=""></a>
+
+    <!-- Links on the Right Side -->
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about_us.html">About Us</a></li>
+    </ul>
+  </nav>
+   <header>
+        <div class="welcome-message">
+            <h1 style="color: #fff3b0;">Welcome to Brgy Balubad, Lumban, Laguna Official Website!</h1>
+            <p>We're glad to have you here. Our barangay is dedicated to fostering a safe, thriving, and connected community. Here, you'll find essential information, updates, and services designed to make your life easier. Whether you're looking to stay informed, access resources, or get involved, this platform is your one-stop destination for all things Brgy Balubad, Lumban, Laguna.</p>
+            <p>Welcome to our community online—together, we’re building a brighter tomorrow!</p>
+        </div>
+    </header>
+    <div class="popup" id="newsletterPopup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()" style="color: #fff;">&times;</span>
+            <h2>Subscribe to Newsletter</h2>
+            <form>
+                <input type="text" id="name" name="name" required placeholder="Name:">
+
+                <input type="email" id="email" name="email" required placeholder="Email:">
+
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+</body>
+<script>
+    // Show the popup after 5 seconds
+window.onload = function() {
+    setTimeout(showPopup, 5000);
+};
+
+function showPopup() {
+    document.getElementById("newsletterPopup").style.display = "flex";
+}
+
+// Close the popup
+function closePopup() {
+    document.getElementById("newsletterPopup").style.display = "none";
+}
+
+</script>
+</html>
